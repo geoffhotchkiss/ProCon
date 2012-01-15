@@ -1,0 +1,37 @@
+body {
+	color: lightgray;
+	background: black;
+}
+
+li[to_delete="true"] {
+	background: #64A8D1;
+}
+
+#tasklist {
+	margin: auto;
+	min-width: 340px;
+	width: 200px;
+}
+
+#todolist, #completedlist {
+	float: left;
+	margin: 0px 10px 0px 10px;
+	text-align: center;
+}
+
+#todo, #completed { 
+	margin: 0px;
+	padding: 0px;
+	border-radius: 20px;
+	/* padding: 15px 0px; */
+	list-style-type: none; 
+	background: #536872; 
+	min-height: 300px;
+	min-width: 140px;
+}
+
+#todo li, #completed li { 
+	border-radius:10px;
+	margin: 15px;
+	text-align: center;
+}

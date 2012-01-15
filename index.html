@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+	<div id="addtaskfield">
+		Task: <input type="text"/>
+	</div>
+	<div id="buttons">
+		<button class="task" id="add">Add task</button>
+		<button class="task" id="delete">Delete task</button>
+	</div>
+	<div id="tasklist">
+		<div id="todolist">
+			<h2>Todo</h2>
+				<ul id="todo" class="dropable selectable">
+					<li class="ui-widget-content">Item 1</li>
+					<li class="ui-widget-content">Item 2</li>
+					<li class="ui-widget-content">Item 3</li>
+					<li class="ui-widget-content">Item 4</li>
+					<li class="ui-widget-content">Item 5</li>
+					<li class="ui-widget-content">Item 6</li>
+					<li class="ui-widget-content">Item 7</li>
+				</ul>
+		</div>
+		<div id="completedlist">
+			<h2>Completed</h2>		
+				<ul id="completed" class="dropable selectable">
+				</ul>
+		</div>
+	</div>  
+
+	</hr>
+  </body>
+</html>
