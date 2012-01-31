@@ -7,31 +7,28 @@ li[to_delete="true"] {
 	background: #64A8D1;
 }
 
-#tasklist {
-	margin: auto;
-	min-width: 340px;
-	width: 200px;
+#inputs {
+	background: gray;
 }
 
-#todolist, #completedlist {
-	float: left;
-	margin: 0px 10px 0px 10px;
+#proslist, #conslist {
 	text-align: center;
 }
 
-#todo, #completed { 
-	margin: 0px;
-	padding: 0px;
+#pros, #cons { 
+	list-style-type: none;
 	border-radius: 20px;
-	/* padding: 15px 0px; */
-	list-style-type: none; 
 	background: #536872; 
-	min-height: 300px;
-	min-width: 140px;
+	min-height: 400px;
+	padding: 20px;	
 }
 
-#todo li, #completed li { 
-	border-radius:10px;
-	margin: 15px;
-	text-align: center;
+#pros li, #cons li { 
+	padding: 0px;
+	margin: 10px 0px;
+}
+
+#shareurltext {
+	background-color: blue;
+	float: left;
 }
