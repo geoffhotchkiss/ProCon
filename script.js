@@ -1,5 +1,3 @@
-var i = 1;
-
 function getarray(kind) {
 	var thearray = new Array();
 	$("#" + kind + "  > li").each( 
@@ -9,11 +7,30 @@ function getarray(kind) {
 	return thearray;
 }
 
+function makelist() {
+	var pros = decodeURI(window.location.getParameter("pros"));
+	if(pros != "") {
+		pros = pros.split(",");
+		for(var pro in pros) {
+			$("#pros").append("<li>" + pros[pro] + "</li>");
+		}
+	}
+	var cons = decodeURI(window.location.getParameter("cons"));
+	if(cons != "") {
+		cons = cons.split(",");
+		for(var con in cons) {
+			$("#cons").append("<li>" + cons[con] + "</li>");
+		}
+	}
+}
+
 function makeurl(event, ui) {
-	console.log("Pros: " + getarray("pros"));
-	console.log("Cons: " + getarray("cons"));
-	$("#shareurltext").html("Hello world" + i);
-	i++;
+	var url = "http://csh.rit.edu"
+	var proarray = getarray("pros");
+	var conarray = getarray("cons");
+	var toappend = "?pros=" + proarray.toString() + "&cons=" + conarray.toString();
+	$("#shareurltext").html("<a href=\"" + url + window.location.pathname + encodeURI(toappend) + "\">Share</a>");
+	// window.location.getParameter
 }
 
 
@@ -27,6 +44,7 @@ $(document).ready(
   
 		$("#proslist").disableSelection();
 		$("#conslist").disableSelection();
+		makelist();	
 		makeurl(null, null);
 
 
