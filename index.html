@@ -1,48 +1,50 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>Demo</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css"/>
-		<link rel="stylesheet" type="text/css" media="all" href="css/text.css"/>
-		<link rel="stylesheet" type="text/css" media="all" href="css/960.css"/>
-		<link rel="stylesheet" type="text/css" href="css/ui-darkness/jquery-ui-1.8.17.custom.css"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <script src="js/jquery-1.7.1.min.js"></script>
     <script src="js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
 
-	<div class="container_12">
-	<div id="inputs" class="grid_4 prefix_4 suffix_4">
-		<div id="additemfield">
-			Task: <input type="text"/>
-		</div>
-		<div id="buttons">
-				<button class="item" id="add">Add item</button>
-			<div id="radio">
-				<input type="radio" id="proradio" name="radio" /><label for"proradio">Pro</label>
+	<div class="row">
+		<div id="inputs" class="span12">
+			<div id="additemfield">
+				Task: <input type="text"/>
 			</div>
-			<button class="item" id="delete">Delete task</button>
+
+			<div id="buttons" class="btn-group">
+					<button class="btn-success item" id="add">Add item</button>
+					<button class="btn-danger item" id="delete">Delete task</button>
+			</div>
 		</div>
 	</div>
 
-		<div id="proslist" class="grid_3 prefix_3">
-			<h2>Pros</h2>
-				<ul id="pros" class="dropable selectable">
-				</ul>
-		</div>
-		<div id="conslist" class="grid_3 suffix_3">
-			<h2>Cons</h2>		
-				<ul id="cons" class="dropable selectable">
-				</ul>
-		</div>
+	<div class="row">
+		<div class="span12">
+			<div class="row">
+				<div id="proslist" class="span6">
+					<h2>Pros</h2>
+						<ul id="pros" class="dropable selectable">
+						</ul>
+				</div>
 
-		<div id="shareurltext" class="grid_4 prefix_4 suffix_4">
-		</div>
+				<div id="conslist" class="span6">
+					<h2>Cons</h2>		
+						<ul id="cons" class="dropable selectable">
+						</ul>
+				</div>
+			</div>
 
+			<div id="shareurltext" class="span4 offset4">
+			</div>
+
+		</div>
 	</div>
-	</hr>
+
   </body>
 </html>

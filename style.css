@@ -8,6 +8,7 @@ li[to_delete="true"] {
 }
 
 #inputs {
+	border-radius:20px;
 	background: gray;
 }
 
@@ -30,5 +31,5 @@ li[to_delete="true"] {
 
 #shareurltext {
 	background-color: steelblue;
-	float: left;
+	/* float: left; */
 }

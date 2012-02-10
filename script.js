@@ -44,6 +44,7 @@ $(document).ready(
   
 		$("#proslist").disableSelection();
 		$("#conslist").disableSelection();
+		$('.tabs').button();
 		makelist();	
 		makeurl(null, null);
 
